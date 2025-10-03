@@ -1,1 +1,1 @@
-A repository for Bioinformatics Projeccts.
+A repository for Bioinformatics Projects.
