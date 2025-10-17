@@ -15,7 +15,7 @@ Na = 0.001
 import math 
 
 def temperature_formula2(G,C):
-    temp = 81.5 + 16.6*math.log10(Na)+ 0.41*(((G+C)/len(S))*100)-600/len(S)
+    temp = -(81.5 + 16.6*math.log10(Na)+ 0.41*(((G+C)/len(S))*100)-600/len(S))
     return temp
 
 print("Salt adjusted formula: " + str(temperature_formula2(G,C)) + " °C")

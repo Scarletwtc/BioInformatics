@@ -13,7 +13,7 @@ def temperature_formula1(G, C, A, T):
 
 
 def temperature_formula2(G, C, seq_length, Na=0.001):
-    temp = 81.5 + 16.6 * math.log10(Na) + 0.41 * (((G + C) / seq_length) * 100) - (600 / seq_length)
+    temp = -(81.5 + 16.6 * math.log10(Na) + 0.41 * (((G + C) / seq_length) * 100) - (600 / seq_length))
     return temp
 
 def sliding_window_temperature1(sequence, window_size=9):
