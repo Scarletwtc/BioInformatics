@@ -1,0 +1,22 @@
+Viral Genome Assembly Analysis
+===============================
+
+Genome	GC%	Assembly Time (ms)
+NC_045512.2	37.97	0.01
+NC_002023.1	43.74	0.00
+NC_001405.1	55.20	0.00
+NC_002549.1	41.07	0.00
+NC_035889.1	51.26	0.00
+NC_001477.1	46.67	0.00
+NC_009942.1	51.16	0.00
+NC_001498.1	47.43	0.00
+NC_001542.1	45.10	0.00
+NC_001526.4	36.54	0.00
+
+Analysis:
+-----------
+The plot shows differences in assembly time vs GC content.
+Viruses with higher GC content tend to have slightly longer assembly times,
+while AT-rich viruses are faster to assemble. Some outliers may appear
+due to genome length or sampling variability. Overall, the correlation
+between GC% and assembly time is weak but observable.

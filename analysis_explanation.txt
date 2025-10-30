@@ -1,0 +1,17 @@
+Analysis of assembly time vs C+G content for 10 viral genomes:
+
+corona: C+G = 34.87%, Avg assembly time = 0.033 ms
+Boebeisivirus: C+G = 47.19%, Avg assembly time = 0.025 ms
+acute: C+G = 39.75%, Avg assembly time = 0.032 ms
+HepatitisB: C+G = 48.78%, Avg assembly time = 0.034 ms
+HepatitisC: C+G = 58.22%, Avg assembly time = 0.032 ms
+papillomavirus: C+G = 36.33%, Avg assembly time = 0.035 ms
+Nile: C+G = 51.21%, Avg assembly time = 0.032 ms
+Measles: C+G = 49.21%, Avg assembly time = 0.039 ms
+Zika: C+G = 51.89%, Avg assembly time = 0.052 ms
+Enterobacteria: C+G = 51.77%, Avg assembly time = 0.059 ms
+
+Observations:
+- Viruses with higher C+G content may show slightly different assembly times (due to sequence complexity).
+- Points more to the right (higher C+G) vs left indicate GC-rich genomes.
+- Points higher on Y-axis indicate longer assembly times.
