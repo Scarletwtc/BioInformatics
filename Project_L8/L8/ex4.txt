@@ -1,0 +1,40 @@
+1. Aim
+The purpose of this analysis was to scan three genomes, corona.fasta, Nile.fasta, and acute.fasta, for short inverted repeats of 4 to 6 bp in length. These IRs could indicate potential transposon boundaries.
+
+2. Method
+For each genome"
+
+I read the sequence from the FASTA file and combined it into a single continuous string.
+Using a sliding window of 4 to 6 bp, I defined the left repeat.
+For each left repeat, I calculated its reverse complement and searched for matches from the end of the left repeat to the end of the genome.
+Each matching pair of repeats was recorded along with:
+    Their positions (1-based)
+    Repeat length
+    Spacer length (distance between the repeats)
+    Total span (putative transposon length calculated as right_end minus left_start plus 1)
+
+3. Summary of Results
+
+3.1 corona.fasta
+    Genome length: 27,553 bp
+    Total inverted-repeat pairs found: 2,697,859
+    Most IR pairs had the shortest repeat length of 4 bp, fewer had 5 bp, and very few had 6 bp
+    Spacer lengths were widely distributed, with many short spacers and a gradual decrease for longer spacers
+
+3.2 Nile.fasta
+    Genome length: 11,029 bp
+    Total inverted-repeat pairs found: 337,749
+    The pattern was similar to corona.fasta. Most IRs were 4 bp long, fewer were 5 or 6 bp, and spacer lengths were broadly distributed.
+
+3.3 acute.fasta
+    Genome length: 29,903 bp
+    Total inverted-repeat pairs found: 3,089,437
+    Plots showed the same trend as the other genomes. 4-bp repeats were the most common and spacer lengths gradually decreased as they got longer.
+
+
+Because the repeats are very short, it is expected to find a large number of inverted repeats by chance. This explains the hundreds of thousands to millions of hits in all three genomes.
+The smooth decrease in the number of pairs as spacer length increases suggests that most detected IRs are likely random and not true transposon boundaries.
+
+The sliding-window search successfully identified all short inverted repeats of 4 to 6 bp in the three genomes and described their distribution. 
+However, the very high number of hits and the broad, smooth distribution of spacer lengths indicate that most short IRs occur by chance.
+ The results represent potential, but not confirmed, transposon candidates.
